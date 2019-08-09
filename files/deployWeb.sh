@@ -55,7 +55,7 @@ cd /var/www/html;
 echo "Downloading Moodle";
 sudo git clone -b MOODLE_36_STABLE git://git.moodle.org/moodle.git; 
 echo "Installing Moodle cli mode"
-
+# If cli will be not work in this appearance, than can be written in one line like: --lang="en" --wwwroot="http://moodle.local" --dataroot="/var/moodle/data" --dbtype="mariadb"...
 sudo /usr/bin/php  moodle/admin/cli/install.php --lang="en"\
 --wwwroot="http://moodle.local"\
 --dataroot="/var/moodle/data"\
